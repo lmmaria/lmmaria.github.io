@@ -32,6 +32,20 @@
 
 @media (max-width: 700px) {
   .galeria-projetos {
+    .foto-perfil {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 55px;
+}
+
+.foto-perfil img {
+  width: min(320px, 85vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff75bb;
+  box-shadow: 0 0 45px #ae83ff44;
+}
     grid-template-columns: 1fr;
   }
 }
