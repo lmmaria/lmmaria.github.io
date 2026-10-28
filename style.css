@@ -1,2 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 :root{--bg:#160d26;--bg2:#211332;--card:#2b1b40;--text:#f9f4ff;--muted:#c8b9d7;--pink:#ff75bb;--purple:#ae83ff;--border:#ffffff20}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 44px));margin:auto}.nav{height:76px;position:sticky;top:0;z-index:5;background:#160d26eb;backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1100px)/2))}.brand{font:800 28px Outfit}.brand span,h1 span,h2 em{color:var(--pink)}nav{display:flex;gap:25px}nav a{font-size:14px;color:var(--muted)}nav a:hover{color:var(--pink)}.menu{display:none}.hero{min-height:650px;padding:118px 0 80px;position:relative}.hero:before{content:'';position:absolute;width:420px;height:420px;right:-90px;top:80px;background:radial-gradient(circle,#a34ef044,transparent 70%);pointer-events:none}.eyebrow,.section-tag{font-size:12px;letter-spacing:2.6px;font-weight:700;color:var(--purple)}h1,h2,h3{font-family:Outfit,sans-serif;line-height:1.15}h1{font-size:clamp(45px,7vw,86px);letter-spacing:-3px;max-width:850px;margin:25px 0}h2{font-size:clamp(32px,4.5vw,53px);letter-spacing:-1px;margin:18px 0 32px}h2 em{font-style:normal}h3{font-size:24px;margin:16px 0}.hero>p{max-width:670px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;padding:13px 22px;border-radius:11px;background:linear-gradient(110deg,#ae83ff,#f879bd);color:#1b0d29;font-weight:800}.btn.secondary{color:var(--text);border:1px solid #ac87c777;background:transparent}.btn:hover{transform:translateY(-2px);transition:.2s}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--border);margin-top:80px;padding-top:27px}.stats strong,.stats small{display:block}.stats small{color:var(--muted);font-size:12px}.section{padding:100px 0}.shade{background:var(--bg2)}.two{display:grid;grid-template-columns:1fr 1fr;gap:60px}.two>p,.intro,.contact p{color:var(--muted);font-size:17px}.panel,.card,.feature{background:var(--card);border:1px solid var(--border);border-radius:19px;padding:29px}.tags{display:flex;flex-wrap:wrap;gap:10px}.tags span,.pill{border:1px solid #b188ff50;border-radius:100px;padding:6px 13px;font-size:12px;color:#e3c7ff;background:#ad7dff12}.tags.large span{padding:13px 20px;font-size:14px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card p,.feature p{color:var(--muted)}.card small{color:var(--purple)}.pill{display:inline-block}.projects{grid-template-columns:repeat(3,1fr)}.art{height:170px;border-radius:12px;margin-bottom:24px;display:flex;align-items:center;justify-content:center;font:800 43px Outfit;letter-spacing:-2px}.art span{color:var(--pink)}.a1{background:linear-gradient(140deg,#56318a,#241139)}.a2{background:linear-gradient(140deg,#7b296b,#28123d);font-size:29px}.a3{background:linear-gradient(140deg,#273f8a,#391a54)}.note{font-size:13px;color:var(--muted);margin-top:25px}.contact{background:radial-gradient(ellipse at 80% 40%,#71378655,transparent 55%),var(--bg)}.contact h2{max-width:730px}footer{border-top:1px solid var(--border);padding:22px 0}.foot{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}@media(max-width:800px){.menu{display:block;background:none;color:white;border:0;font-size:26px}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#211332;flex-direction:column;padding:20px 25px}nav.open{display:flex}.hero{min-height:auto;padding:85px 0 65px}.stats,.cards,.projects,.two{grid-template-columns:1fr}.section{padding:70px 0}.foot{flex-direction:column}h1{letter-spacing:-1.5px}.hero:before{width:200px;right:0}}
+/* GALERIA DE PROJETOS */
+
+.galeria-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.galeria-projetos figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #654578;
+  border-radius: 20px;
+  background: #2b193e;
+}
+
+.galeria-projetos img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+}
+
+.galeria-projetos figcaption {
+  padding: 16px;
+  color: #f5e9ff;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .galeria-projetos {
+    grid-template-columns: 1fr;
+  }
+}
