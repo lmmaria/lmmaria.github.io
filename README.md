@@ -1,4 +1,4 @@
-# Portfólio — Maria Régia Lima
+# Portfólio — Maria Régia Batista Magalhães de Lima
 
 Site pessoal estático para GitHub Pages.
 
