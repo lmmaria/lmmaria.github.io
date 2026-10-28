@@ -56,3 +56,18 @@
     width: min(250px, 75vw);
   }
 }
+.foto-perfil {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.foto-perfil img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+  border: 4px solid #ff75bb;
+  box-shadow: 0 0 35px #ae83ff44;
+}
