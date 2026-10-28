@@ -30,9 +30,8 @@
   font-weight: 600;
 }
 
-@media (max-width: 700px) {
-  .galeria-projetos {
-    .foto-perfil {
+/* FOTO DE PERFIL */
+.foto-perfil {
   display: flex;
   justify-content: center;
   padding: 30px 20px 55px;
@@ -46,6 +45,14 @@
   border: 5px solid #ff75bb;
   box-shadow: 0 0 45px #ae83ff44;
 }
+
+/* AJUSTES PARA CELULAR */
+@media (max-width: 700px) {
+  .galeria-projetos {
     grid-template-columns: 1fr;
+  }
+
+  .foto-perfil img {
+    width: min(250px, 75vw);
   }
 }
